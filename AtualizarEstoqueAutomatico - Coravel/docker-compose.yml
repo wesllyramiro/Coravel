@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  atualizarestoqueautomatico:
+    image: ${DOCKER_REGISTRY-}atualizarestoqueautomatico
+    build:
+      context: .
+      dockerfile: AtualizarEstoqueAutomatico/Dockerfile
